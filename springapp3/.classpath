@@ -51,7 +51,5 @@
 			<attribute name="m2e-apt" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/db-derby-10.14.2.0-bin/db-derby-10.14.2.0-bin/lib/derby.jar"/>
-	<classpathentry kind="lib" path="C:/db-derby-10.14.2.0-bin/db-derby-10.14.2.0-bin/lib/derbyclient.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
