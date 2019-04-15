@@ -20,7 +20,7 @@ public class BlogController {
     @GetMapping("/trans")
     public List<Blog> findAllTransactions()
     {
-    	return blogRespository.findAll();
+    	return blogRespository.findAllTransactions();
     }
 
     @GetMapping("/blog/{id}")
