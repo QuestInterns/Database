@@ -20,7 +20,7 @@ public class BlogController {
     @GetMapping("/custom")
     public List<Blog> findAllTransactions()
     {
-    	return blogRespository.findAllTransactions();
+    	return blogRespository.findCustomQuery();
     }
 
     @GetMapping("/blog/{id}")

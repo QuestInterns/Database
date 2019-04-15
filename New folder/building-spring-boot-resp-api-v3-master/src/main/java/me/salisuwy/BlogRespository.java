@@ -14,5 +14,5 @@ public interface BlogRespository extends JpaRepository<Blog, Integer> {
     // CUSTOM QUERY
     
     @Query(value = "SELECT * from qpd_trans where id = 1", nativeQuery = true)
-    List<Blog> findAllTransactions();
+    List<Blog> findCustomQuery();
 }
