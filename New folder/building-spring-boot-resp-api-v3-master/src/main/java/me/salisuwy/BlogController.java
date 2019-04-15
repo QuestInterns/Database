@@ -17,7 +17,7 @@ public class BlogController {
         return blogRespository.findAll();
     }
     
-    @GetMapping("/trans")
+    @GetMapping("/custom")
     public List<Blog> findAllTransactions()
     {
     	return blogRespository.findAllTransactions();
@@ -47,8 +47,8 @@ public class BlogController {
         int blogId = Integer.parseInt(id);
         // getting blog
         Blog blog = blogRespository.findOne(blogId);
-        blog.setTitle(body.get("title"));
-        blog.setContent(body.get("content"));
+        blog.setTitle(body.get("TransactionType"));
+        blog.setContent(body.get("PatientID"));
         return blogRespository.save(blog);
     }
 
